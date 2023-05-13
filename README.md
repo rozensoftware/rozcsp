@@ -32,7 +32,7 @@ In the input file, passwords should be specified, which will be transformed to o
 
 ## Example
 
-For a given word *john* output might be as follows:
+For a given word *john* the output might be as follows:
 
 ```txt
 john
