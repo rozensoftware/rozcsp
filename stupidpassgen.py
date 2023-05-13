@@ -58,12 +58,13 @@ class StupidPasswordGenerator:
                 for n in range(0, max_number):
                     result.append(word + str(n))
 
-        #Next add extension from year 1972 to current year
+        #Next add extension from year 'from_year' to current year
+        from_year = 1980
         now = datetime.now()
 
         for array in arrays:
             for word in array:
-                for n in range(1972, now.year + 1):
+                for n in range(from_year, now.year + 1):
                     result.append(word + str(n))
 
         return result
