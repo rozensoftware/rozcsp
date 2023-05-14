@@ -23,10 +23,10 @@ sudo apt install python3-psutil
 In the input file, passwords should be specified, which will be transformed to obtain various permutations of them.
 
 ```bash
-./rozcsp -i passtempl.txt -o pswds.txt
+./rozcsp -i passtemplate.txt -o pswds.txt
 ```
 
-*-i* - input file with basic passwords with words e.g.: my_secret_pass, pass12, winter, john, etc. Keep all words lower case. Try to have number of input words/passwords under a thousand because output file might be big. It shouldn't be a problem having even greater number of words but I didn't tested this too much. It is recommended to be cautious in this.
+*-i* - input file with basic passwords with words e.g.: my_secret_pass, pass12, winter, john, etc. Keep all words lower case. Try to have number of input words/passwords under a thousand because output file might be big. It shouldn't be a problem having even greater number of words but I didn't tested this too much. It is recommended to be cautious in this. Example file *passtemplate.txt* is added to this repository. It includes common human names and dogs names.
 
 *-o* - output file in which generated passwords based on the input content file will be saved.
 
