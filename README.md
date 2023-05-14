@@ -6,7 +6,9 @@ Version: 1.0
 
 ## Description
 
-The program generates simple passwords created quickly by people due to corporate requirements. Often such passwords are not particularly calculating and contain combinations of previous passwords. Frequent changes of passwords in companies are an annoying process, so the passwords quickly invented can be somewhat predictable. This program is the answer to that.
+The program generates simple passwords created quickly by people due to corporate requirements. Often such passwords are not particularly calculating and contain combinations of previous passwords. Frequent changes of passwords in companies are an annoying process, so the passwords quickly invented can be somewhat predictable. This program is the answer to that. You can generate combinations of passwords that can be used in a dictionary attack.
+
+It should work on every system in which Python is installed.
 
 ## Building
 
@@ -24,11 +26,11 @@ In the input file, passwords should be specified, which will be transformed to o
 ./rozcsp -i passtempl.txt -o pswds.txt
 ```
 
-*-i* - input file with basic passwords with words e.g.: my_secret_pass, pass12, winter, john, etc.
+*-i* - input file with basic passwords with words e.g.: my_secret_pass, pass12, winter, john, etc. Keep all words lower case. Try to have number of input words/passwords under a thousand because output file might be big. It shouldn't be a problem having even greater number of words but I didn't tested this too much. It is recommended to be cautious in this.
 
 *-o* - output file in which generated passwords based on the input content file will be saved.
 
-*-d* - flag, when specified will print some debug information as memory usage.
+*-d* - flag, when specified will print some debug information e.g. memory usage.
 
 ## Example
 
